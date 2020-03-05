@@ -11,8 +11,8 @@ RUN apk update && apk add ca-certificates \
   wget \
   git \
   libc6-compat \
-  coreutils \
-  bind-tools
+  bind-tools \
+  coreutils
 
 RUN wget -O /usr/local/bin/om "https://github.com/pivotal-cf/om/releases/download/0.42.0/om-linux"
 RUN wget -O /usr/local/bin/spruce "https://github.com/geofffranks/spruce/releases/download/v1.18.0/spruce-linux-amd64"
@@ -39,4 +39,3 @@ RUN chmod +x /usr/local/bin/bbr
 RUN chmod +x /usr/local/bin/safe
 RUN chmod +x /usr/local/bin/cf
 RUN chmod +x /usr/local/bin/fly
-RUN chmod +x /usr/bin/csplit
