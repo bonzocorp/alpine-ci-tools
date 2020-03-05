@@ -39,3 +39,4 @@ RUN chmod +x /usr/local/bin/bbr
 RUN chmod +x /usr/local/bin/safe
 RUN chmod +x /usr/local/bin/cf
 RUN chmod +x /usr/local/bin/fly
+RUN chmod +x /usr/bin/csplit
