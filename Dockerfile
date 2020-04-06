@@ -13,7 +13,7 @@ RUN apk update && apk add ca-certificates \
   bind-tools \
   coreutils
 
-RUN wget -O /usr/local/bin/om "https://github.com/pivotal-cf/om/releases/download/0.42.0/om-linux"
+RUN wget -O /usr/local/bin/om "https://github.com/pivotal-cf/om/releases/download/4.6.0/om-linux-4.6.0"
 RUN wget -O /usr/local/bin/spruce "https://github.com/geofffranks/spruce/releases/download/v1.18.0/spruce-linux-amd64"
 RUN wget -O - "https://github.com/vmware/govmomi/releases/download/v0.18.0/govc_linux_amd64.gz" | gunzip -c > /usr/local/bin/govc
 RUN wget -O /usr/local/bin/replicator "https://github.com/pivotal-cf/replicator/releases/download/0.10.0/replicator-linux"
